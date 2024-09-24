@@ -1,0 +1,17 @@
+spring:
+  main:
+    web-application-type: none
+
+client:
+  cron:
+    parse: "0 */20 * * * *"
+    clean: "0 0 0 * * ?"
+  news-api:
+    url: http://localhost:8080/news
+  news-site:
+    url: https://news.liga.net/ua
+    selector:
+      news-item: .news-list-page
+      headline: .article-header__title.is-accent
+      description: .article-header__caption
+      publication-time: .article-header__date

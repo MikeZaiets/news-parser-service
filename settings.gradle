@@ -1,0 +1,3 @@
+rootProject.name = 'news-parser-service'
+include 'client'
+include 'server'

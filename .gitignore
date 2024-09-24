@@ -1,0 +1,14 @@
+/logs/
+/target/
+/.idea/
+/news-service/news-service.iml
+/gui-service/gui-service.iml
+/shared-module/shared-module.iml
+/parser-service/parser-service.iml
+/client/target/
+/.gradle/
+../build/
+.iml
+/server/target/
+/client/build/
+/server/build/

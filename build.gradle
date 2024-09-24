@@ -1,0 +1,13 @@
+group 'ua.com.zmike'
+version '1.0.0-SNAPSHOT'
+
+allprojects {
+    repositories {
+        mavenCentral()
+    }
+}
+
+
+task runAll {
+    dependsOn ':client:bootRun', ':server:bootRun'
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<AnchorPane prefHeight="370.0" prefWidth="522.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/22"
+            fx:controller="ua.com.zmike.client.controller.NewsViewController">
+    <VBox alignment="BASELINE_CENTER" prefHeight="371.0" prefWidth="522.0" spacing="10">
+
+        <Label fx:id="headlineLabel" prefHeight="45.0" prefWidth="467.0" style="-fx-font-size: 18px;" text="Headline"/>
+        <Label fx:id="descriptionLabel" prefHeight="5.0" prefWidth="464.0" style="-fx-font-size: 14px;"
+               text="Description"/>
+
+        <HBox alignment="CENTER" spacing="10">
+            <Button onAction="#onPreviousNews" text="&lt;"/>
+            <Button onAction="#onNextNews" text="&gt;"/>
+        </HBox>
+
+        <HBox alignment="CENTER" spacing="10">
+            <Label fx:id="publicationTimeLabel" prefHeight="18.0" prefWidth="274.0" style="-fx-font-size: 12px;"
+                   text="Publication Time"/>
+            <Button onAction="#onMorningNews" text="Morning"/>
+            <Button onAction="#onDayNews" text="Day"/>
+            <Button onAction="#onEveningNews" text="Evening"/>
+        </HBox>
+
+        <HBox alignment="CENTER" prefHeight="38.0" prefWidth="522.0" spacing="10">
+            <Button onAction="#onCreateNews" text="Create"/>
+            <Button contentDisplay="BOTTOM" onAction="#onEditNews" text="Edit"/>
+            <Button alignment="BOTTOM_CENTER" onAction="#onDeleteNews" text="Delete"/>
+        </HBox>
+
+    </VBox>
+</AnchorPane>
